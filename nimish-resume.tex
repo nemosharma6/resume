@@ -1,0 +1,188 @@
+%-------------------------
+% Resume in Latex
+%------------------------
+
+\title{Nimish Sharma}
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+
+\newcommand{\headerSection}[4]{
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{\href{#2}{\Large #1}} & \textbf{Email:} \href{mailto:#3}{#3}\\
+      \href{#2}{#2} & \textbf{Mobile:} #4 \\
+    \end{tabular*}
+}
+
+\newcommand{\resumeItem}[2]{  
+  \vspace{-2pt}
+  \item\small{
+    \textbf{#1} {\\ #2}
+  }
+}
+
+\newcommand{\projectDetailItem}[1]{
+ \hspace{5pt}
+  \item[-]\small{ #1 \vspace{-3pt} } 
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item[]
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      #3, \textbf{#1} & #4 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\company}[2]{
+  \vspace{0pt}\item[]
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\small#2}
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\jobTitle}[3]{
+  \vspace{0pt}\item[]
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      {#1} & {\small #3}
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\educationRow}[4]{
+  \vspace{-1pt}\item[]
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}} c@{\extracolsep{\fill}}r}
+    #2, #1 & GPA:\ #4 & #3 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\teachingExperienceRow}[2]{
+  \vspace{-1pt}\item[]
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small{#1} & \small{#2}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[3]{
+  \vspace{-1pt}\item[]
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{\small#1} & {\small#2}
+    \end{tabular*}
+    {\small#3}\vspace{-5pt}
+}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[label={}, leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[label={}, leftmargin=10pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\projectDetailListStart}{\vspace{-13pt} \begin{itemize}[label={}, leftmargin=10pt]}
+\newcommand{\projectDetailListEnd}{\end{itemize}\vspace{-7pt} }
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%----------HEADING-----------------
+  \headerSection{Nimish Sharma}{https://www.google.co.in}
+  {sharmanemo1994@gmail.com}{+1 469 395 1345}
+
+%-----------EDUCATION-----------------
+\vspace{-3pt}
+
+\section{Education}
+  \resumeSubHeadingListStart
+  \vspace{-1pt}\item[]
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}} l@{\extracolsep{\fill}} l@{\extracolsep{\fill}}r}
+    M.S. Computer Science & University of Texas at Dallas, Richardson & GPA:\ 3.89/4.0 & Aug 18 - May 20 \\
+    B.E. Computer Science & Bits Pilani, Hyderabad & GPA:\ 8.45/10.0 & Aug 12 - July 16
+    \end{tabular*}\vspace{-5pt}
+  \resumeSubHeadingListEnd
+
+%----------Classes ------------------
+
+\section{Graduate Courses}
+{ Distributed Computing, Machine Learning, Big Data Management, Artificial Intelligence, Natural Language Processing}
+
+
+%--------TECHNICAL SKILLS------------
+\section{Technical Skills}
+ \resumeSubHeadingListStart
+   \item{ \small{\textbf{Languages:}{ Java, Python, C, Scala, Kotlin }}} \vspace{-8pt} 
+   \item{ \small{\textbf{Technologies:}{ Spring, Docker, Akka }}} \vspace{-8pt} 
+   \item{ \small{\textbf{Big Data Technologies:}{ Apache Hadoop, Spark, Flink, Kafka, ElasticSearch, Hive, Oozie, NumPy}} }
+ \resumeSubHeadingListEnd
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+      \company{University of Texas at Dallas}{Richardson, TX}
+      \jobTitle{Graduate Teaching Assistant, CS 1335 \& CS 1337 Processing \& C++}{}{Spring 2019}
+      \vspace{-3pt}
+      \jobTitle{Graduate Teaching Assistant, CS 2336 Object Oriented Programming}{}{Fall 2018}
+
+      \company{Walmart Labs}{Bangalore, India}
+      \jobTitle{Software Engineer}{Sams's Club}{Aug 2016 - July 2018}
+        \projectDetailListStart
+        \projectDetailItem{Developed microservices using Akka framework to replace the existing legacy monolith application}
+        \projectDetailItem{Assignments included design, code, develop, test, document, build/install and deploy the services}
+        \projectDetailItem{Design and built ETL pipelines to automate ingestion and processing of TBs of data using the tools and frameworks of the Hadoop Ecosystem}
+        \projectDetailItem{Configure big data technologies as well as tune processes for performance at scale}
+        \projectDetailListEnd
+
+      \company{BlueJeans Network}{Bangalore, India}
+      \jobTitle{Software Engineer Intern}{Primetime Platform}{Jan 2016 - June 2016}
+        \projectDetailListStart
+        \projectDetailItem{Wrote documentation and test cases for the Primetime platform using Enunciate and Junit frameworks}
+        \projectDetailItem{Developed new api endpoints and worked on fixing production bugs}
+        \projectDetailListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\vspace{-7pt}
+\section{Academic Projects}
+  \resumeSubHeadingListStart    
+  \resumeSubItem{VLC Marker Plugin}{}{Built a VLC plugin to enable a user to mark sections of a video. These marked sections can be viewed later without need to search again through the video. Written in Lua.}
+  \resumeSubItem{Real Time Tweet Analysis}{}{Built a data pipeline that ingested real time tweets, processed them using Flink and displayed their analysis on a Kibana dashboard. Written in Java.}
+  \resumeSubItem{Sync Breadth First Search}{}{Implemented Synchronous Breadth First Search Algorithm on a Distributed Network. The distributed network was simulated via threads. Written in Kotlin.}
+  \resumeSubItem{Intelligent Poker Player}{}{Built an Intelligent Poker player that calculated the probability of victory on every card turn and uses that to make an intelligent decision with respect to the game. Written in Prolog.}
+  \resumeSubHeadingListEnd
+
+
+\end{document}
